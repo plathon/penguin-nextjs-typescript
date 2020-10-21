@@ -1,4 +1,5 @@
 import React, { FC, useEffect, useState } from 'react'
+import Link from 'next/link'
 import { Product } from 'types/product'
 
 const ListProducts: FC = () => {
@@ -22,6 +23,7 @@ const ListProducts: FC = () => {
 
   return (
     <div>
+      <Link href="/product/create">Create Product</Link>
       <table>
         <tbody>
           <tr>
